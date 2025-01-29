@@ -16,6 +16,11 @@ const db = mysql.createConnection
     database: "kozutak",
 });
 
+app.get("/", (req, res) =>
+{
+    res.send("Ez a 12cd szerver!")
+})
+
 app.listen(3001, "127.0.0.1", () =>
 {
     console.log("Server is running...");
